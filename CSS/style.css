@@ -48,7 +48,8 @@ main{
     margin-top: 130px;
 }
 .sell_more_content h1{
-    font: normal 49px/57px Raleway;
+    font: 49px Raleway;
+    line-height: 57px;
     margin-bottom: 20px;
 }
 .sell_more_content p{
@@ -88,6 +89,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 120px;
 }
 .stats_box .circle{
     width: 63px;
@@ -126,19 +128,127 @@ main{
     margin-top: 7px;
 }
 /*------------------BENEFITS------------------------*/
+/*dac wiecej boxow tej samej wartosci i zrobic np flex reverse itp*/
+
 .benefits_100vw{
     background: #F7F7F7;
     width: 100%;
-    margin-top: 105px;
-
+    display: flex;
 }
 .benefits{
-margin-top: 105px;
+    box-sizing: border-box;
+    margin: 105px auto;
+    position: relative;
+   width: 100%;
+
 }
 .benefits .benefit_box{
-    align-items: center;
     background: #FFFFFF;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 370px;
+    z-index: 1;
+    margin-bottom: 50px;
+    max-width: 1150px;
+}
+.benefit_text{
+    margin: 70px 35px;
+    max-width: 415px;
+}
+.benefit_box:nth-of-type(1) .benefit_text::after{
+    content: "";
+    width: 328px;
+    border: 2px solid #FB3B64;
+    display: block;
+    margin-top: 50px;
+   }
+.benefit_box:nth-of-type(2) .benefit_text::after{
+    content: "";
+    width: 328px;
+    border: 2px solid #08a6e4;
+    display: block;
+    margin-top: 50px;
+}
+.benefit_box:nth-of-type(3) .benefit_text::after{
+    content: "";
+    width: 328px;
+    border: 2px solid #55DFB4;
+    display: block;
+    margin-top: 50px;
+}
+.benefit_box p{
+    font-family: open sans, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
 
 }
+.benefit_box h2{
+    font: 36px Raleway;
+    margin-bottom: 30px;
+    line-height: 42px;
+}
+.benefit_box:nth-of-type(3) {
+    margin-bottom: 105px;
+    background: #F7F7F7;
+    border: none;
+    display: flex;
+}
+.benefit_box:nth-of-type(1) .right_benefit{
+    margin-right: 115px;
+    z-index: 1;
+    }
+.benefit_box:nth-of-type(2) .left_benefit{
+    margin: 30px 0 15px 70px;
+    position: relative;
+    z-index: 1;
+}
+.benefit_box:nth-of-type(1) .right_benefit:before{
+    content: "";
+    width: 180px;
+    height: 180px;
+    background: #FB3B64;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 40px;
+    right: 315px;
+    top:40px;
+    z-index: -1;
+    }
+.benefit_box:nth-of-type(2) .left_benefit:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background: #08a6e4;
+    border-radius: 50%;
+    left: 0;
+    top: -10px;
+    z-index: -1;
+
+}
+.benefit_box:nth-of-type(3) .right_benefit{
+    background: #55DFB4;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    min-width: 440px;
+    box-sizing: border-box;
+    height: 100%;
+    flex-grow: 1;
+    max-width: 440px;
+   }
+
+.benefit_box:nth-of-type(3) .left_benefit{
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    height: 100%;
+    width: 100%;
+    }
