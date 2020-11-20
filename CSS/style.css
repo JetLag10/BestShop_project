@@ -1,24 +1,31 @@
 
+
+/*Proszę o informację typu:*/
+/*-jak coś można było zrobić lepiej. Jak poprawnie powinna wyglądać struktura. Informacje typu tu za duzo o diva, tu lepiej byloby dać dodatkowo div z jakas klasą.tu lepiej flexem a tam np inline itp.*/
+/*-zawsze jestem nie pewien czy lepiej dać obrazek w html czy w css jako background*/
+/*-dlaczego nadajemy sekcją klasy ?*/
+/*-proszę zwróc uwagę na uzycie height i width, czasami mam wrazenie ze jakbym otworzyl ten projetk na jakims malym ekranie to wszystko by sie wysypalo*/
+/*-czy nie naduzywam marginesow?
+/* dodatkowo pytania są w komentarzach w kodzie css
+
+
+ */
+                    /*Proszę o OSTRĄ KONSTUKTYWNĄ KRYTYKĘ*/
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root {
-    --color-primary: #08a6e4;
-    --color-primary-shadow: rgba(7, 172, 230, 0.16);
-    --color-redish: #fb3b64;
-    --color-green: #55dfb4;
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-grey: #a5a5a5;
-    --color-light-grey: #f7f7f7;
-    --font-raleway: "Raleway", sans-serif;
-    --font-open-sans: "Open Sans", sans-serif;
-}
+
 .header_100vw{
     background: #FFFFFF;
     box-shadow: 0 3px 6px #00000029;
     height: 70px;
     width: 100%;
-   }
+}
 .container{
     max-width: 1352px;
     margin: 0 auto;
@@ -30,7 +37,7 @@
     height: 100%;
 }
 .logo_header{
-    font: normal normal 300 32px/37px Raleway;
+    font: normal normal 300 32px/37px Raleway, sans-serif;
     color: #08A6E4;
     text-decoration: none;
     }
@@ -41,7 +48,7 @@
 .header_content nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    font: normal normal bold 11px/15px Open Sans;
+    font: normal normal bold 11px/15px Open Sans,sans-serif;
     letter-spacing: 3.28px;
     color: #A5A5A5;
     padding: 28px 18px 22px;
@@ -64,7 +71,7 @@ main{
     margin-bottom: 20px;
 }
 .sell_more_content p{
-    font: normal 16px/22px Open Sans;
+    font: normal 16px/22px Open Sans,sans-serif;
     margin-bottom: 60px;
 }
 .sell_more_content a{
@@ -73,7 +80,7 @@ main{
     border-radius: 40px;
     text-decoration: none;
     color: #FFFFFF;
-    font: normal normal bold 16px/22px Open Sans;
+    font: normal normal bold 16px/22px Open Sans,sans-serif;
     padding: 22px 157px;
 }
 .sell_more_img{
@@ -85,13 +92,13 @@ main{
 
 .stats_content{
     text-align: center;
-    }
+}
 .stat_boxes{
     display: flex;
     justify-content: space-between;
 }
 .stats_content h2{
-    font: normal 36px/42px Raleway;
+    font: normal 36px/42px Raleway,sans-serif;
     margin-bottom: 100px;
 
 }
@@ -118,12 +125,12 @@ main{
     background: #55DFB4;
 }
 .number{
-    font: normal normal 800 20px/24px Raleway;
+    font: normal normal 800 20px/24px Raleway,sans-serif;
     letter-spacing: 5.96px;
     margin-bottom: 20px;
 }
 .description{
-    font: normal 17px/20px Raleway;
+    font: normal 17px/20px Raleway,sans-serif;
     color: #A5A5A5;
 }
 
@@ -139,7 +146,7 @@ main{
     margin-top: 7px;
 }
 /*------------------BENEFITS------------------------*/
-/*dac wiecej boxow tej samej wartosci i zrobic np flex reverse itp*/
+/*dac wiecej boxow tej samej wartosci i zrobic np flex reverse itp ale nie idzie mi to */
 
 .benefits_100vw{
     background: #F7F7F7;
@@ -151,7 +158,6 @@ main{
     margin-top: 105px;
     position: relative;
    width: 100%;
-
 }
 .benefits .benefit_box{
     background: #FFFFFF;
@@ -165,7 +171,6 @@ main{
     margin-bottom: 50px;
     max-width: 1150px;
 }
-
 .benefit_text{
     margin: 70px 35px;
     max-width: 415px;
@@ -195,10 +200,9 @@ main{
     font-family: open sans, sans-serif;
     font-size: 16px;
     line-height: 22px;
-
 }
 .benefit_box h2{
-    font: 36px Raleway;
+    font: 36px Raleway,sans-serif;
     margin-bottom: 30px;
     line-height: 42px;
 }
@@ -271,7 +275,7 @@ main{
 
   }
 .pricing h2{
-    font: 36px Raleway;
+    font: 36px Raleway,sans-serif;
     line-height: 42px;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -295,41 +299,41 @@ main{
     margin-bottom: 70px;
 }
 .pricing_box-premium .pricing_details{
-margin-bottom: 45px;
+    margin-bottom: 45px;
 }
 
-/*Trzeba zminejszyc margin bottom tylko w tym ostatnim boxie. moze zrobic flexem cale kolumny i bedzei samo sie ustawialo*/
+/*te wszystkie boxy nie sa rowne i nie moge ustalic marginesu dolnego od guzikow begin*/
+/*------------------------------------cos tu jest pomieszane--------------------------*/
 .pricing_box-basic{
     border: 1px solid #FB3B64;
     border-radius: 18px;
     text-align: center;
 }
 .pricing_details h3{
-    font: bold 21px Raleway;
+    font: bold 21px Raleway,sans-serif;
     color: #13253B;
     margin: 35px 0 15px;
 }
 
 .pricing_box-basic span{
-    font: normal normal 300 46px Open Sans;
+    font: normal normal 300 46px Open Sans,sans-serif;
     color: #FB3B64;
     }
 .pricing_box-professional span{
-    font: normal normal 300 46px Open Sans;
+    font: normal normal 300 46px Open Sans,sans-serif;
     color: #07ACE6;;
 }
 .pricing_box-premium span{
-    font: normal normal 300 46px Open Sans;
+    font: normal normal 300 46px Open Sans,sans-serif;
     color: #55DFB4;
 }
 .pricing_menu{
-    font: 14px/41px Open Sans;
+    font: 14px/41px Open Sans,sans-serif;
 }
 .pricing_limited{
-    font: normal normal bold 12px Raleway;
+    font: normal normal bold 12px Raleway,sans-serif;
     color: #13253B;
     margin-top: 5px;
-
 }
 .pricing_menu .green_check{
 position: relative;
@@ -356,17 +360,16 @@ position: relative;
    text-decoration: none;
     background: #EB476E;
     border-radius: 23px;
-    font: bold 13px Open Sans;
+    font: bold 13px Open Sans,sans-serif;
     color: #FFFFFF;
     padding: 15px 65px;
     position: relative;
     display: block;
     bottom: -8px;
    }
-
 .pricing_box-professional a{
     text-decoration: none;
-    font: bold 13px Open Sans;
+    font: bold 13px Open Sans,sans-serif;
     color: #FFFFFF;
     padding: 15px 65px;
     position: relative;
@@ -380,13 +383,12 @@ position: relative;
     text-decoration: none;
     background: #55DFB4;
     border-radius: 23px;
-    font: bold 13px Open Sans;
+    font: bold 13px Open Sans,sans-serif;
     color: #FFFFFF;
     padding: 15px 65px;
     position: relative;
     display: block;
     bottom: -20px;
-
 }
 .pricing_box-professional{
     text-align: center;
@@ -396,7 +398,6 @@ position: relative;
     border: 1px solid #07ACE6;
     border-radius: 18px;
     margin: 0 60px;
-
 }
 .pricing_box-premium{
     border: 1px solid #55DFB4;
@@ -406,7 +407,6 @@ position: relative;
 /*-------------------------------------CONTACT----------------------------------------*/
 .contact{
     margin-bottom: 60px;
-
 }
 .contact_section{
     display: flex;
@@ -422,31 +422,69 @@ position: relative;
     display: flex;
     flex-direction: column;
 }
-.contact_left_side h1{
-    font: normal 49px/57px Raleway;
-    margin-bottom: 22px;
-}
 .contact_left_side span{
-    font: normal 16px/22px Open Sans;
+    font-size: 49px;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 22px;
+    line-height: 57px;
+    font-weight: normal;
+}
+.contact_left_side p{
+    font: normal 16px/22px Open Sans, sans-serif;
 }
 .contact_right_side{
     width: 50%;
 }
+.contact_inputs label{
+    font: normal normal bold 11px/15px Open Sans,sans-serif;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+    margin-top: 10px;
+}
+.contact_inputs input{
+    border: none;
+    margin: 20px 0;
+    padding-bottom:  15px;
+    border-bottom: 1px solid #A5A5A5;
+}
+.check_box_rights{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
 
-/*wypozycjonowac formularz*/
+/*--------------------------stylowanie checkboksa----------------------------------------------------*/
+/*na zajeciach tego nie mielismy. Przemek powiedzial ze nie musimy tego robic i nie bedzie tego ocenial.
+jedyne co to swoj kod przeslal Vitali w ktorym to dziala ale nie wiem czy jest zrobione poprawnie.
+chcialbym poznac opinie fachowca jak to sie robi poprawnie*/
 
+.check_box_rights input{
+    margin-right: 10px;
+    position: relative;
+}
+.check_box_rights input:before{
+    content: "";
+    min-width: 20px;
+    min-height: 20px;
+    border: 1px solid #A5A5A5 ;
+    position: absolute;
+    display: inline-block;
+}
+.check_box_rights p{
+    font: normal normal normal 12px/17px Open Sans, sans-serif;
+    color: #707070;
+}
 .contact_list{
     display: flex;
-    }
+}
 .contact_list li{
-    font: normal normal 600 16px/22px Open Sans;
+    font: normal normal 600 16px/22px Open Sans,sans-serif;
     color: #A5A5A5;
     margin-right: 57px;
     margin-top: 42px;
     position: relative;
-    }
-
-/*nie moge wyrownac ikonek z tekstem*/
+}
+/* -----------------------------nie moge wyrownac ikonek z tekstem-----------------------*/
 
 .contact_list li:first-child:before{
     content: "";
@@ -467,11 +505,10 @@ position: relative;
 .contact_inputs{
     display: flex;
     flex-direction: column;
-}
+   }
 .contact_button{
     display: flex;
     justify-content: flex-end;
-
 }
 .contact_button a{
     background: #08A6E4;
@@ -480,19 +517,19 @@ position: relative;
     color: #FFFFFF;
     padding: 20px 97px;
     text-decoration: none;
-    font: normal normal bold 13px/18px Open Sans;
+    font: normal normal bold 13px/18px Open Sans,sans-serif;
     margin-top: 20px;
 }
 /*---------------------------footer------------------------------*/
 .footer {
-
     box-shadow: 0 -5px 40px #00000029;
     padding: 20px 0;
     background: #F7F7F7;
     margin-top: 20px;
+}
 
+/*------------------------kiedy pod sekcja <main> dolacze footer to pozycjonuje sie to w srodku strony i dzieją się cuda. dalczego ?---------------------*/
 
-}/*dlaczego jak wyciagne <footer> poza <main> to dzieją się cuda?*/
 .footer_content {
     display: flex;
     justify-content: space-between;
@@ -502,19 +539,17 @@ position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 .footer_info a{
-    font: normal normal 300 26px/30px Raleway;
+    font: normal normal 300 26px/30px Raleway,sans-serif;
     color: #08A6E4;
     text-decoration: none;
-    }
+}
 .footer_info span{
-    font: normal normal normal 11px/15px Open Sans;
+    font: normal normal normal 11px/15px Open Sans,sans-serif;
     color: #A5A5A5;
     margin-top: 6px;
 }
-
 .footer_social a:first-of-type {
     margin-right: 25px;
 }
