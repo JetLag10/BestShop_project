@@ -1,7 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+:root {
+    --color-primary: #08a6e4;
+    --color-primary-shadow: rgba(7, 172, 230, 0.16);
+    --color-redish: #fb3b64;
+    --color-green: #55dfb4;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #a5a5a5;
+    --color-light-grey: #f7f7f7;
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+}
 .header_100vw{
     background: #FFFFFF;
     box-shadow: 0 3px 6px #00000029;
@@ -137,7 +148,7 @@ main{
 }
 .benefits{
     box-sizing: border-box;
-    margin: 105px auto;
+    margin-top: 105px;
     position: relative;
    width: 100%;
 
@@ -154,6 +165,7 @@ main{
     margin-bottom: 50px;
     max-width: 1150px;
 }
+
 .benefit_text{
     margin: 70px 35px;
     max-width: 415px;
@@ -199,6 +211,7 @@ main{
 .benefit_box:nth-of-type(1) .right_benefit{
     margin-right: 115px;
     z-index: 1;
+    position: relative;
     }
 .benefit_box:nth-of-type(2) .left_benefit{
     margin: 30px 0 15px 70px;
@@ -214,8 +227,8 @@ main{
     position: absolute;
     transform: rotate(45deg);
     border-radius: 40px;
-    right: 315px;
-    top:40px;
+    right: 0;
+    top:-30px;
     z-index: -1;
     }
 .benefit_box:nth-of-type(2) .left_benefit:before{
@@ -252,3 +265,256 @@ main{
     height: 100%;
     width: 100%;
     }
+/*------------------PRICING ------------------------*/
+.pricing{
+    text-align: center;
+
+  }
+.pricing h2{
+    font: 36px Raleway;
+    line-height: 42px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.pricing_boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pricing_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 372px;
+    height: 460px;
+
+
+}
+.pricing_details{
+    margin-bottom: 70px;
+}
+.pricing_box-premium .pricing_details{
+margin-bottom: 45px;
+}
+
+/*Trzeba zminejszyc margin bottom tylko w tym ostatnim boxie. moze zrobic flexem cale kolumny i bedzei samo sie ustawialo*/
+.pricing_box-basic{
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+    text-align: center;
+}
+.pricing_details h3{
+    font: bold 21px Raleway;
+    color: #13253B;
+    margin: 35px 0 15px;
+}
+
+.pricing_box-basic span{
+    font: normal normal 300 46px Open Sans;
+    color: #FB3B64;
+    }
+.pricing_box-professional span{
+    font: normal normal 300 46px Open Sans;
+    color: #07ACE6;;
+}
+.pricing_box-premium span{
+    font: normal normal 300 46px Open Sans;
+    color: #55DFB4;
+}
+.pricing_menu{
+    font: 14px/41px Open Sans;
+}
+.pricing_limited{
+    font: normal normal bold 12px Raleway;
+    color: #13253B;
+    margin-top: 5px;
+
+}
+.pricing_menu .green_check{
+position: relative;
+}
+.green_check:before{
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-top: 18px;
+    margin-right: 5px;
+    background-image: url("../Images/Ckechmark-1.svg");
+}
+.red_check:before{
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-top: 18px;
+    margin-right: 5px;
+    background-image: url("../Images/Close.svg");
+}
+.pricing_box-basic a{
+   text-decoration: none;
+    background: #EB476E;
+    border-radius: 23px;
+    font: bold 13px Open Sans;
+    color: #FFFFFF;
+    padding: 15px 65px;
+    position: relative;
+    display: block;
+    bottom: -8px;
+   }
+
+.pricing_box-professional a{
+    text-decoration: none;
+    font: bold 13px Open Sans;
+    color: #FFFFFF;
+    padding: 15px 65px;
+    position: relative;
+    display: block;
+    background: #07ACE6;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 23px;
+    bottom: -28px;
+    }
+.pricing_box-premium a{
+    text-decoration: none;
+    background: #55DFB4;
+    border-radius: 23px;
+    font: bold 13px Open Sans;
+    color: #FFFFFF;
+    padding: 15px 65px;
+    position: relative;
+    display: block;
+    bottom: -20px;
+
+}
+.pricing_box-professional{
+    text-align: center;
+    height: 500px;
+    width: 405px;
+    box-shadow: 5px 10px 27px #07ACE629;
+    border: 1px solid #07ACE6;
+    border-radius: 18px;
+    margin: 0 60px;
+
+}
+.pricing_box-premium{
+    border: 1px solid #55DFB4;
+    border-radius: 18px;
+   }
+
+/*-------------------------------------CONTACT----------------------------------------*/
+.contact{
+    margin-bottom: 60px;
+
+}
+.contact_section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    }
+.contact_left_side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.contact_text{
+    display: flex;
+    flex-direction: column;
+}
+.contact_left_side h1{
+    font: normal 49px/57px Raleway;
+    margin-bottom: 22px;
+}
+.contact_left_side span{
+    font: normal 16px/22px Open Sans;
+}
+.contact_right_side{
+    width: 50%;
+}
+
+/*wypozycjonowac formularz*/
+
+.contact_list{
+    display: flex;
+    }
+.contact_list li{
+    font: normal normal 600 16px/22px Open Sans;
+    color: #A5A5A5;
+    margin-right: 57px;
+    margin-top: 42px;
+    position: relative;
+    }
+
+/*nie moge wyrownac ikonek z tekstem*/
+
+.contact_list li:first-child:before{
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-image: url("../Images/Mail Icon.svg");
+    margin-right: 10px;
+    }
+.contact_list li:last-child:before{
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-image: url("../Images/Phone Icon.svg");
+    margin-right: 10px;
+}
+.contact_inputs{
+    display: flex;
+    flex-direction: column;
+}
+.contact_button{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.contact_button a{
+    background: #08A6E4;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    color: #FFFFFF;
+    padding: 20px 97px;
+    text-decoration: none;
+    font: normal normal bold 13px/18px Open Sans;
+    margin-top: 20px;
+}
+/*---------------------------footer------------------------------*/
+.footer {
+
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+    background: #F7F7F7;
+    margin-top: 20px;
+
+
+}/*dlaczego jak wyciagne <footer> poza <main> to dzieją się cuda?*/
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.footer_info a{
+    font: normal normal 300 26px/30px Raleway;
+    color: #08A6E4;
+    text-decoration: none;
+    }
+.footer_info span{
+    font: normal normal normal 11px/15px Open Sans;
+    color: #A5A5A5;
+    margin-top: 6px;
+}
+
+.footer_social a:first-of-type {
+    margin-right: 25px;
+}
